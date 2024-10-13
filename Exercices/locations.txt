@@ -1,0 +1,14 @@
+Annotations pour Berlin :
+18
+Annotations pour Kyoto:
+2
+Annotations pour Paris:
+353
+Annotations pour Rome:
+26
+Annotations pour Taipei:
+1
+Annotations pour Tokyo:
+2
+Annotations pour Washington:
+13
