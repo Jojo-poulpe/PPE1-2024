@@ -1,0 +1,47 @@
+Question 1.a :
+
+  926  wc 2016*.ann
+  927  cd ../
+  928  touch comptes2016.txt
+  929  echo "Annotations en 2016 : 9443" > comptes2016.txt
+  930  cd 2017
+  931  wc 2017*.ann
+  932  cd ../
+  933  touch comptes2017.txt
+  934  echo "Annotations en 2017 : 7183" > comptes2017.txt
+  935  cd 2018
+  936  wc 2018*.ann
+  937  cd ../
+  938  touch comptes2018.txt
+  939  echo "Annotations en 2018 : 7565" > comptes2018.txt
+  940  cat comptes2016.txt comptes2017.txt comptes2018.txt > comptes.txt
+  941  echo -e  "Annotations en 2016 :\n 9443\n Annotations en 2017:\n 7183\n Annotations en 2018 :\n 7565" > comptes.txt
+  942  echo -e "Annotations en 2016:\n9443\nAnnotations en 2017:\n7183\Annotations en 2018:\n7565" > comptes.txt
+  943  echo -e "7183\n" >> comptes.txt
+  944  echo -e "Annotations en 2016:\n9443\nAnnotations en 2017:\n7183\Annotations en 2018:\n7565" > comptes.txt
+  945  echo -e "Annotations en 2016:\n9443\nAnnotations en 2017:\n7183\nAnnotations en 2018:\n7565" > comptes.txt
+
+Question 1.b:
+
+ 1012  egrep "Berlin" *.ann | wc -l
+ 1013  egrep "Kyoto" *.ann | wc -l
+ 1014  egrep "Paris" *.ann | wc-l
+ 1015  egrep "Paris" *.ann | wc -l
+ 1016  egrep "Rome" *.ann | wc -l
+ 1017  egrep "Taipei" *.ann | wc -l
+ 1018  egrep "Tokyo" *.ann | wc -l
+ 1019  egrep "Washington" *.ann | wc -l
+ 1020  touch locations.txt
+ 1021  echo -e "Annotations pour Berlin :\n18\nAnnotations pour Kyoto:\n2\nAnnotations pour Paris:\n353\nAnnotations pour Rome:\n26\nAnnotations pour Taipei:\n1\nAnnotations pour Tokyo:\n2\nAnnotations pour Washington:\n13" > locations.txt
+
+
+
+Exercice 2.a
+cat 2016*.ann | grep Location | cut -f 3 | uniq -c | sort -n | tail -n 15 > classement_2016.txt
+cat 2016*.ann | grep Location | cut -f 3 | sort -n | uniq -c | sort -n | tail -n 15 > classement_2016.txt
+cat 2016*.ann | grep Location | cut -f 3 | sort -n | uniq -c | sort -n | tail -n 15 > classement_2017.txt
+cat 2017*.ann | grep Location | cut -f 3 | sort -n | uniq -c | sort -n | tail -n 15 > classement_2017.txt
+cat 2018*.ann | grep Location | cut -f 3 | sort -n | uniq -c | sort -n | tail -n 15 > classement_2018.txt
+
+Exercice 2.b
+cat 201*_04_*.ann | grep Location | cut -f 3 | sort -n | uniq -c | sort -n | tail -n 15 > classement_avril.txt
