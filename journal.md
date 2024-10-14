@@ -18,4 +18,8 @@ Pour ce qui est des commandes d'erreurs sur Git, nous avons d'abord vu 'git rese
 
 #Séance 3
 ## exercices git 
-         
+
+
+I AM ERROR. 
+
+Cette ligne doit rester après correction.         
