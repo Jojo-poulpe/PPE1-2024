@@ -20,6 +20,6 @@ Pour ce qui est des commandes d'erreurs sur Git, nous avons d'abord vu 'git rese
 ## exercices git 
 
 
-I AM ERROR. 
+I AM ERROR 
 
 Cette ligne doit rester après correction.         
